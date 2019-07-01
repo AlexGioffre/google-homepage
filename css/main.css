@@ -1,0 +1,139 @@
+/* General Settings */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-weight: 400;
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-family: arial,sans-serif;
+}
+
+/* Settings Layout */
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10% 85% 5%;
+}
+
+/* NAV Settings */
+nav.topnav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav.topnav *{
+    margin: 0 15px 0 0;
+}
+
+nav.topnav a:link,
+nav.topnav a:visited{
+    text-decoration: none;
+    color: rgba(0,0,0,0.87);
+    opacity: 0.85;
+    font-size: 13px;
+}
+
+nav.topnav a:hover,
+nav.topnav a:focus{
+    text-decoration: underline;
+    opacity: 1;
+}
+
+img.btn_apps{
+    height: 20px;
+    -webkit-filter: grayscale(1);
+    filter: opacity(.55)
+}
+img.btn_apps:hover{
+    cursor: pointer;
+    filter: opacity(1);
+}
+
+nav.topnav .btn{
+    border: 1px solid #4285f4;
+    border-radius: 2px;
+    background: #4285f4;
+    background: -moz-linear-gradient(top,#4387fd,#4683ea);
+    background: linear-gradient(top,#4387fd,#4683ea);
+    padding: .75rem 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Main Settings */
+section.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.main input{
+    margin: 2rem 0;
+    width: 40vw;
+    border: 1px solid #acacacde;
+    border-radius: 25px;
+    background: transparent;
+    padding: 1.5rem 2rem;
+}
+
+section.main input:hover,
+section.main input:focus{
+    cursor: pointer;
+    box-shadow: .1rem .1rem 1rem rgba(0, 0, 0, .3)
+}
+
+.btn-main{
+    margin-right: 1rem;
+    border: none;
+    background: #f2f2f2;
+    padding: .75rem 1.5rem;
+    color: #222;
+}
+
+.btn-main:hover{
+    outline: 1px solid #858585;
+    cursor: pointer;
+}
+
+/* Footer Setting */
+
+footer{
+    background:#f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+footer .left ul li{
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 13px;
+    color: #5f6368;
+}
+
+footer .right ul li{
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 13px;
+    color: #5f6368;
+}
+
+footer .right ul li:hover,
+footer .left ul li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    
+}
